@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//mnt/e/Project/vibe/**)",
+      "Read(//e/Project/vibe/pingan-bank-3/**)",
+      "Bash(pdftotext \"E:/Project/vibe/pingan-bank-3/金融科技岗测试-王洪博-安徽科技工程大学.pdf\" -)",
+      "Bash(python3 -c \"import PyPDF2; reader = PyPDF2.PdfReader\\(r'E:/Project/vibe/pingan-bank-3/金融科技岗测试-王洪博-安徽科技工程大学.pdf'\\); [print\\(p.extract_text\\(\\)\\) for p in reader.pages]\")",
+      "Bash(go mod *)",
+      "Bash(go build *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)"
+    ]
+  }
+}
